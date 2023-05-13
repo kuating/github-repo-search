@@ -33,25 +33,45 @@
   text-align: center;
 }
 
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('../public/searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
 
 .description {
   line-height: 1.5;
   font-size: 1.5rem;
 }
 
+.resultslabel {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
 .grid {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 
   max-width: 800px;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .card {
   margin: 1rem;
-  flex-basis: 45%;
+  flex-basis: 100%;
   padding: 1.5rem;
   text-align: left;
   color: inherit;
@@ -73,15 +93,74 @@
   font-size: 1.5rem;
 }
 
-.card p {
+.owner {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.1;
+}
+
+.last_update{
+  margin: 0;
+  font-size: 1.0rem;
+  line-height: 1.1;
+}
+
+.line3 {
+  margin: 0;
+  font-size: 1.0rem;
+  line-height: 1.1;
+  color: #AAAAAA;
+}
+
+.line2 {
   margin: 0;
   font-size: 1.25rem;
-  line-height: 1.5;
+  line-height: 1.1;
+}
+
+.stars {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.1;
+}
+
+.card p{
+  margin: 0;
+  font-size: 1.rem;
+  line-height: 1.1;
 }
 
 .logo {
   height: 1em;
 }
+
+.pagebar {
+  display: inline-block;
+  padding: 1.5rem;
+}
+
+.pagebar button{
+  cursor: pointer;
+  outline: 0;
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.pagebar button:hover {
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
 
 @media (max-width: 600px) {
   .grid {
